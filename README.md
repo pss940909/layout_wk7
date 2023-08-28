@@ -1,5 +1,7 @@
 # 網頁切版直播班 Vite 範例
 
+Github Pgese: https://pss940909.github.io/layout_wk7/
+
 ## Node.js 版本
   - 專案的 Node.js 版本需為 v16 以上
   - 查看自己版本指令：`node -v`
