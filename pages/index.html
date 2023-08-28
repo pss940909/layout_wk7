@@ -10,6 +10,9 @@
       href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
       rel="stylesheet"
     />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -31,7 +34,12 @@
       <div class="container">
         <h3 class="subtitle text-primary-dark mb-6">用專業的心，做專業的事</h3>
         <ul class="feature-list row flex-wrap">
-          <li class="feature-item col-3 col-lg-6 col-sm-12 px-3 mb-lg-6">
+          <li
+            class="feature-item col-3 col-lg-6 col-sm-12 px-3 mb-lg-6"
+            data-aos="flip-left"
+            data-aos-easing="ease-in"
+            data-aos-duration="900"
+          >
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-1.png?raw=true"
               alt="feature 1"
@@ -40,7 +48,13 @@
             <h4 class="text-center fw-bold text-primary-dark mb-2">單一價格</h4>
             <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
           </li>
-          <li class="feature-item col-3 col-lg-6 col-sm-12 px-3 mb-lg-6">
+          <li
+            class="feature-item col-3 col-lg-6 col-sm-12 px-3 mb-lg-6"
+            data-aos="flip-left"
+            data-aos-delay="350"
+            data-aos-easing="ease-in"
+            data-aos-duration="900"
+          >
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-2.png?raw=true"
               alt="feature 2"
@@ -54,7 +68,13 @@
               20 分鐘即可完成。
             </p>
           </li>
-          <li class="feature-item col-3 col-lg-6 col-sm-12 px-3 mb-sm-6">
+          <li
+            class="feature-item col-3 col-lg-6 col-sm-12 px-3 mb-sm-6"
+            data-aos="flip-left"
+            data-aos-delay="700"
+            data-aos-easing="ease-in"
+            data-aos-duration="900"
+          >
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-3.png?raw=true"
               alt="feature 3"
@@ -68,7 +88,13 @@
               天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
             </p>
           </li>
-          <li class="feature-item col-3 col-lg-6 col-sm-12 px-3">
+          <li
+            class="feature-item col-3 col-lg-6 col-sm-12 px-3"
+            data-aos="flip-left"
+            data-aos-delay="1050"
+            data-aos-easing="ease-in"
+            data-aos-duration="900"
+          >
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-sectioin2-4.png?raw=true"
               alt="feature 4"
@@ -84,7 +110,14 @@
     <!-- CLASSIC SECTION -->
     <div class="classic-sec">
       <div class="container">
-        <h3 class="subtitle text-primary-dark mb-12 mb-sm-6">經典系列鏡框</h3>
+        <h3
+          class="subtitle text-primary-dark mb-12 mb-sm-6"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+        >
+          經典系列鏡框
+        </h3>
         <ul class="row classic-list flex-wrap">
           <li class="classic-item col-4 col-xl-12 px-3 mb-xl-6">
             <img
@@ -117,9 +150,24 @@
     <!-- DESIGNER SECTION -->
     <div class="designer-sec">
       <div class="container">
-        <h3 class="subtitle text-white mb-12 mb-sm-6">聯名設計鏡框</h3>
+        <h3
+          class="subtitle text-white mb-12 mb-sm-6"
+          data-aos="zoom-in"
+          data-aos-delay="800"
+          data-aos-duration="800"
+          data-aos-easing="ease-out-cubic"
+          data-aos-offset="300"
+        >
+          聯名設計鏡框
+        </h3>
         <ul class="row designer-list flex-wrap">
-          <li class="col-6 col-lg-12 mb-lg-6 pl-3 px-lg-3">
+          <li
+            class="col-6 col-lg-12 mb-lg-6 pl-3 px-lg-3"
+            data-aos="fade-down"
+            data-aos-duration="800"
+            data-aos-delay="300"
+            data-aos-offset="350"
+          >
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true"
               alt="designer-1"
@@ -128,7 +176,13 @@
               <a href="#" class="text-primary fw-bold">DOUBLE A+</a>
             </div>
           </li>
-          <li class="col-6 col-lg-12 pr-3 px-lg-3">
+          <li
+            class="col-6 col-lg-12 pr-3 px-lg-3"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="900"
+            data-aos-offset="350"
+          >
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true"
               alt="designer-2"
@@ -144,7 +198,16 @@
     <!-- RECOMMEND SECTION -->
     <div class="recommend-sec">
       <div class="container">
-        <h3 class="subtitle text-primary-dark mb-12 mb-sm-6">顧客推薦</h3>
+        <h3
+          class="subtitle text-primary-dark mb-12 mb-sm-6"
+          data-aos="zoom-in"
+          data-aos-delay="800"
+          data-aos-duration="800"
+          data-aos-easing="ease-out-cubic"
+          data-aos-offset="500"
+        >
+          顧客推薦
+        </h3>
         <ul class="row recommend-list flex-wrap">
           <li
             class="recommend-item col-3 col-lg-6 col-sm-12 px-3 mb-lg-6 mb-sm-4"
@@ -284,6 +347,30 @@
       </div>
     </div>
     <%- include('./layout/footer'); -%>
+    <script>
+            AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+      });
+    </script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
