@@ -1,0 +1,88 @@
+// 主要標籤 ====================
+.main-tags {
+  a {
+    font-size: $h4-fz;
+  }
+
+  @include mobile {
+    a {
+      font-size: $font-size-base;
+    }
+  }
+}
+
+// 文章==========================
+.article-sec {
+  h3 {
+    font-size: $h2-fz;
+
+    @include media-576 {
+      font-size: $h4-fz;
+    }
+  }
+  h4 {
+    font-weight: bold;
+    font-size: $h4-fz;
+
+    @include media-576 {
+      font-size: $font-size-base;
+    }
+  }
+  .para {
+    p {
+      color: #555555;
+    }
+  }
+
+  .social-media {
+    img {
+      width: 24px;
+    }
+
+    @include media-576 {
+      display: none;
+    }
+  }
+}
+
+.article-bottom {
+  hr {
+    color: #707070;
+  }
+
+  @include media-576 {
+    display: none;
+  }
+}
+
+// 標籤列表 =========================
+.tag-sec {
+  // 上方標籤title
+  .tag-title {
+    color: $primary;
+    h3,
+    span {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+
+  // 下方標籤
+  .tag-list {
+    a {
+      font-size: $h4-fz;
+      color: $primary;
+      margin-right: 24px;
+      font-weight: bold;
+    }
+
+    @include pad {
+      font-size: $font-size-base;
+      margin-right: 16px;
+    }
+  }
+
+  @include media-576 {
+    display: none;
+  }
+}

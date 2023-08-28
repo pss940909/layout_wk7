@@ -1,0 +1,317 @@
+$max: 12;
+$base-spacing: 4px;
+
+// margin bottom----------------------------------------
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+@for $i from 0 through $max {
+  .mb-#{$i} {
+    margin-bottom: $i * $base-spacing;
+  }
+}
+
+@include media-992 {
+  @for $i from 0 through $max {
+    .mb-xl-#{$i} {
+      margin-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .mb-lg-#{$i} {
+      margin-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
+  @for $i from 0 through $max {
+    .mb-md-#{$i} {
+      margin-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .mb-sm-#{$i} {
+      margin-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+// margin x ---------------------------------------------
+@for $i from 0 through $max {
+  .mx-#{$i} {
+    margin-right: $i * $base-spacing;
+    margin-left: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .mx-lg-#{$i} {
+      margin-right: $i * $base-spacing;
+      margin-left: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
+  @for $i from 0 through $max {
+    .mx-md-#{$i} {
+      margin-right: $i * $base-spacing;
+      margin-left: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .mx-sm-#{$i} {
+      margin-right: $i * $base-spacing;
+      margin-left: $i * $base-spacing;
+    }
+  }
+}
+
+// margin right ----------------------------------------------
+@for $i from 0 through $max {
+  .mr-#{$i} {
+    margin-right: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .mr-lg-#{$i} {
+      margin-right: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
+  @for $i from 0 through $max {
+    .mr-md-#{$i} {
+      margin-right: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .mr-sm-#{$i} {
+      margin-right: $i * $base-spacing;
+    }
+  }
+}
+
+// margin left ------------------------------------
+@for $i from 0 through $max {
+  .ml-#{$i} {
+    margin-left: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .ml-lg-#{$i} {
+      margin-left: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
+  @for $i from 0 through $max {
+    .ml-md-#{$i} {
+      margin-left: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .ml-sm-#{$i} {
+      margin-left: $i * $base-spacing;
+    }
+  }
+}
+
+// padding y --------------------------------
+
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+@for $i from 0 through $max {
+  .py-#{$i} {
+    padding-top: $i * $base-spacing;
+    padding-bottom: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .py-lg-#{$i} {
+      padding-top: $i * $base-spacing;
+      padding-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
+  @for $i from 0 through $max {
+    .py-md-#{$i} {
+      padding-top: $i * $base-spacing;
+      padding-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .py-sm-#{$i} {
+      padding-top: $i * $base-spacing;
+      padding-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+// padding x -------------------------------
+
+@for $i from 0 through $max {
+  .px-#{$i} {
+    padding-right: $i * $base-spacing;
+    padding-left: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .px-lg-#{$i} {
+      padding-right: $i * $base-spacing;
+      padding-left: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
+  @for $i from 0 through $max {
+    .px-md-#{$i} {
+      padding-right: $i * $base-spacing;
+      padding-left: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .px-sm-#{$i} {
+      padding-right: $i * $base-spacing;
+      padding-left: $i * $base-spacing;
+    }
+  }
+}
+
+// padding left ---------------------------
+@for $i from 0 through $max {
+  .pl-#{$i} {
+    padding-left: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .pl-lg-#{$i} {
+      padding-left: $i * $base-spacing;
+    }
+  }
+}
+
+// padding right -------------------------------
+@for $i from 0 through $max {
+  .pr-#{$i} {
+    padding-right: $i * $base-spacing;
+  }
+}
+
+@include media-576 {
+  @for $i from 0 through $max {
+    .pr-md-#{$i} {
+      padding-right: $i * $base-spacing;
+    }
+  }
+}
+
+// padding top ----------------------------
+
+@for $i from 0 through $max {
+  .pt-#{$i} {
+    padding-top: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .pt-lg-#{$i} {
+      padding-top: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
+  @for $i from 0 through $max {
+    .pt-md-#{$i} {
+      padding-top: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .pt-sm-#{$i} {
+      padding-top: $i * $base-spacing;
+    }
+  }
+}
+
+// padding bottom
+@for $i from 0 through $max {
+  .pb-#{$i} {
+    padding-bottom: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .pb-lg-#{$i} {
+      padding-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
+  @for $i from 0 through $max {
+    .pb-md-#{$i} {
+      padding-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .pb-sm-#{$i} {
+      padding-bottom: $i * $base-spacing;
+    }
+  }
+}

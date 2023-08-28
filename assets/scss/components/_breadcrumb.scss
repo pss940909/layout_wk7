@@ -1,0 +1,8 @@
+.breadcrumb {
+  a {
+    color: $text;
+  }
+  a.active {
+    color: $primary;
+  }
+}

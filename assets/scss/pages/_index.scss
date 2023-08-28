@@ -1,0 +1,228 @@
+// 通用
+
+.subtitle {
+  font-size: $h2-fz;
+  font-weight: bold;
+  text-align: center;
+
+  @include mobile {
+    font-size: $h4-fz;
+  }
+}
+
+.index-banner {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+  height: 787px;
+  background-position: center center;
+  background-size: cover;
+
+  &-info {
+    padding-top: 296px;
+
+    p {
+      font-size: $h3-fz;
+    }
+    h2 {
+      font-size: $h1-fz;
+    }
+    a {
+      font-size: $h5-fz;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  }
+}
+
+@include pad {
+  .index-banner {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+  }
+}
+
+@include media-576 {
+  .index-banner {
+    height: 396px;
+
+    &-info {
+      padding-top: 144px;
+
+      p {
+        font-size: $font-size-base;
+      }
+      h2 {
+        font-size: $h4-fz;
+      }
+    }
+  }
+}
+
+// FEATURE SECTION ====================================
+
+.feature-sec {
+  background-color: $primary-light;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .feature-item {
+    img {
+      display: block;
+      width: 100px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    h4 {
+      font-size: $h4-fz;
+    }
+  }
+}
+
+@include mobile {
+  .feature-sec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+// CLASSIC SECTION ===========================
+
+.classic-sec {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .classic-item {
+    img {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    a {
+      display: block;
+      font-weight: 900;
+      font-style: italic;
+      font-size: $h2-fz;
+    }
+  }
+}
+
+@include mobile {
+  .classic-sec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+// DESIGNER SECTION ==========================
+.designer-sec {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  background-position: center center;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .designer-item {
+    background-color: $border-white;
+
+    a {
+      display: block;
+      font-weight: 900;
+      font-style: italic;
+      font-size: $h2-fz;
+    }
+  }
+}
+
+@include pad {
+  .designer-sec {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
+    background-position: top center;
+  }
+}
+
+@include mobile {
+  .designer-sec {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+// RECOMMEND SECTION=====================
+
+.recommend-sec {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .card {
+    border: 1px solid #dee2e6;
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 4px;
+  }
+
+  .card-info {
+    height: 205px;
+  }
+
+  .date {
+    color: #707070;
+    font-size: $font-size-sm;
+  }
+}
+
+@include mobile {
+  .recommend-sec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+// CONTACT_FORM
+
+.contact-form {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $primary-light;
+
+  .input-control {
+    label,
+    input,
+    textarea {
+      width: 100%;
+    }
+
+    input,
+    textarea {
+      padding: 6px 12px;
+    }
+
+    input[type="checkbox"] {
+      width: auto;
+    }
+  }
+
+  input[type="button"] {
+    width: 66.66667%; // 4/6
+    border: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@include pad {
+  .contact-form {
+    input[type="button"] {
+      width: 60%; // 6/10
+    }
+  }
+}
+
+@include mobile {
+  .contact-form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    input[type="button"] {
+      width: 100%; // 6/10
+    }
+  }
+}

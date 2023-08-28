@@ -1,0 +1,20 @@
+.page-title {
+  font-size: $h2-fz;
+  font-weight: bold;
+  position: relative;
+  padding-left: 16px;
+
+  @include mobile {
+    font-size: $h4-fz;
+  }
+}
+
+.page-title::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 100%;
+  background-color: $primary-dark;
+  margin-left: -16px;
+}

@@ -1,0 +1,76 @@
+// BANNER =========================
+.optical-banner {
+  div {
+    width: 50%;
+    height: 296px;
+    background-size: cover;
+    background-position: center center;
+  }
+  .left {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true");
+  }
+  .right {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true");
+  }
+
+  @include media-992 {
+    .left {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true");
+    }
+
+    .right {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true");
+    }
+  }
+
+  @include media-576 {
+    div {
+      height: 136px;
+    }
+  }
+}
+
+// 產品列表 ======================
+.optical-sec {
+  h2 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+
+  .optical-info {
+    font-size: $h4-fz;
+
+    .price {
+      color: $primary;
+      font-weight: bold;
+    }
+  }
+
+  .color-list {
+    li {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+    }
+    .color-1 {
+      background-color: #5f3e2d;
+    }
+    .color-2 {
+      background-color: #b75929;
+    }
+  }
+}
+
+@include pad {
+}
+
+@include mobile {
+  .optical-sec {
+    h2,
+    h3 {
+      font-size: $h4-fz;
+    }
+  }
+}

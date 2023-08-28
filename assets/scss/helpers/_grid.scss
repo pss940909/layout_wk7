@@ -1,0 +1,55 @@
+$grid-max: 12;
+
+$base-grid-width: calc((1 / 12) * 100%);
+
+// 格線系統
+
+.row {
+  display: flex;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+@include pad {
+  .row-lg {
+    display: flex;
+  }
+}
+
+@for $i from 1 through $grid-max {
+  .col-#{$i} {
+    width: $i * $base-grid-width;
+  }
+}
+
+@include media-992 {
+  @for $i from 1 through $grid-max {
+    .col-xl-#{$i} {
+      width: $i * $base-grid-width;
+    }
+  }
+}
+
+@include pad {
+  @for $i from 1 through $grid-max {
+    .col-lg-#{$i} {
+      width: $i * $base-grid-width;
+    }
+  }
+}
+
+@include media-576 {
+  @for $i from 1 through $grid-max {
+    .col-md-#{$i} {
+      width: $i * $base-grid-width;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 1 through $grid-max {
+    .col-sm-#{$i} {
+      width: $i * $base-grid-width;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// BANNER
+.sunglasses-banner {
+  div {
+    width: 50%;
+    height: 296px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .left {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true");
+  }
+
+  .right {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true");
+  }
+
+  @include media-992 {
+    .left {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true");
+    }
+
+    .right {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true");
+    }
+  }
+
+  @include media-576 {
+    div {
+      height: 136px;
+    }
+  }
+}

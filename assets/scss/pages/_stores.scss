@@ -1,0 +1,63 @@
+.store-select {
+  label {
+    font-size: $h4-fz;
+    @include mobile {
+      font-size: $font-size-base;
+    }
+  }
+  select {
+    border: 1px solid #ced4da;
+    padding: 6px 12px;
+    flex-grow: 1;
+    font-size: 18px;
+    color: #495057;
+    outline: 0;
+  }
+}
+
+.store-item {
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .store-name {
+    padding: 8px 24px;
+    border: 1px solid #00000020;
+    font-size: $h4-fz;
+  }
+
+  .store-info {
+    padding: 16px 24px;
+    border: 1px solid #00000020;
+    margin-top: -1px;
+    border-top: transparent;
+    font-size: $h5-fz;
+
+    .material-icons-outlined {
+      vertical-align: middle;
+      font-size: $h4-fz;
+    }
+  }
+
+  a {
+    display: block;
+    background-color: $text;
+    color: $border-white;
+    font-size: 19px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+iframe {
+  @include pad {
+    height: 414px;
+  }
+
+  @include mobile {
+    height: 208px;
+  }
+}

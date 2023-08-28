@@ -1,0 +1,32 @@
+.nav-header {
+  height: 80px;
+  @include pad {
+    height: auto;
+    max-width: 768px;
+  }
+}
+
+.nav-logo {
+  img {
+    width: 80px;
+  }
+}
+
+@include pad {
+  .nav-list {
+    width: 100%;
+  }
+  .nav-item {
+    width: 50%;
+    border: 1px solid $border-white;
+  }
+
+  .nav-item:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .nav-item:nth-child(3),
+  .nav-item:nth-child(4) {
+    border-top: 0;
+  }
+}
